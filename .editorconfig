@@ -1,0 +1,12 @@
+# EditorConfig: http://EditorConfig.org
+
+# Top-most config file
+root = true
+
+# All files
+[*]
+charset = utf-8
+indent_style = tab
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
