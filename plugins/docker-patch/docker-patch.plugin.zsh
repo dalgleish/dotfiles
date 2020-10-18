@@ -1,5 +1,3 @@
-## docker plugin patch
-
 # delete all images, containers, cache, builds ...
 alias docker-prune-all="docker system prune --all && docker image prune -a"
 

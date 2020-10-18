@@ -79,7 +79,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm brew docker net-custom file-custom docker-patch)
+plugins=(git nvm brew docker docker-patch net-custom file-custom)
 
 source $ZSH/oh-my-zsh.sh
 

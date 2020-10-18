@@ -8,16 +8,13 @@ if test ! $(which brew); then
 fi
 
 # Update Homebrew recipes
-brew doctor
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 brew bundle
 
-# Clone Github repositories
-./clone.sh
-
+# Install node.js
 ./node.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles

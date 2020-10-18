@@ -1,7 +1,3 @@
-# IP addresses
-alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias whois="whois -h whois-servers.net"
-
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
 
@@ -39,7 +35,6 @@ alias ipInfo1='ipconfig getpacket en1'
 alias openPorts='sudo lsof -i | grep LISTEN'
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # Show active network interfaces
@@ -47,7 +42,6 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"

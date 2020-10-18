@@ -25,9 +25,6 @@ command -v hd > /dev/null || alias hd="hexdump -C"
 # File size
 alias fs="stat -f \"%z bytes\""
 
-# clean terminal history
-alias yolo="history -c && clear"
-
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
@@ -52,6 +49,3 @@ alias numFiles='echo $(ls -1 | wc -l)'
 alias make1mb='mkfile 1m ./1MB.dat'
 alias make5mb='mkfile 5m ./5MB.dat'
 alias make10mb='mkfile 10m ./10MB.dat'
-
-# qfind:    Quickly search for file
-alias qfind="find . -name "
